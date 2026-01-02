@@ -1,0 +1,43 @@
+.layoutGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+/* Header */
+.layoutGrid > :nth-child(1) {
+  grid-column: 1 / -1;
+}
+
+/* About */
+.about {
+  grid-column: 1 / 3;
+}
+.strength {
+  grid-column: 3 / 4;
+}
+.education {
+  grid-column: 4 / 5;
+}
+
+/* Skills */
+.skill {
+  grid-column: 1 / 5;
+}
+
+/* Projects */
+.project {
+  grid-column: 1 / 4;
+}
+.certificate {
+  grid-column: 4 / 5;
+}
+
+@media (max-width: 768px) {
+  .layoutGrid {
+    grid-template-columns: 1fr;
+  }
+  .layoutGrid > * {
+    grid-column: auto;
+  }
+}

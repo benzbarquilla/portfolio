@@ -1,0 +1,24 @@
+.aboutCard {
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.aboutBody .aboutHeader {
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+}
+.aboutBody .aboutText {
+  text-align: justify;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr; /* stack image + text vertically */
+  }
+}
