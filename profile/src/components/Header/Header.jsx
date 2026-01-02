@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic2 from "../../assets/profilePic2.jpg";
+import profilePic from "../../assets/profilePic.jpg";
 import "../Header/Header.css";
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
       <div className="headerGrid">
         {/* Left Side */}
         <div className="profileImg">
-          <img src={profilePic2} alt="Profile" />
+          <img src={profilePic} alt="Profile" />
         </div>
         {/* Right Side */}
         <div class="card">
