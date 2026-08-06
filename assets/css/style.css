@@ -528,7 +528,7 @@ span {
     flex-direction: column;
     gap: 1rem;
 
-    .profile-img {
+    .profile {
       width: 250px;
     }
 
@@ -538,11 +538,6 @@ span {
     .name > p {
       font-size: 25px;
       text-align: center;
-    }
-    .socials {
-      display: flex;
-      justify-content: center;
-      gap: 0.8rem;
     }
   }
 
