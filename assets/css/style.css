@@ -16,7 +16,11 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    max-width: 890px;
+    max-width: 1000px;
+  }
+  .nav-logo {
+    font-weight: bold;
+    text-transform: uppercase;
   }
   .nav-links {
     display: flex;
@@ -50,7 +54,7 @@ body {
 /* main */
 .main-container {
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 1000px;
   margin-top: 6rem;
 }
 /* name */
@@ -59,20 +63,26 @@ body {
   align-items: center;
   gap: 2rem;
 
-  .profile-img {
-    width: 800px;
-    aspect-ratio: 1/1;
-    border-radius: 16px;
+  .profile {
+    position: relative;
     overflow: hidden;
-    box-shadow:
+    width: 1000px;
+    aspect-ratio: 4/3;
+    /* border-radius: 16px;
+     */
+    /* box-shadow:
       0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      0 10px 15px -3px rgba(0, 0, 0, 0.05); */
   }
-  .profile-img > img {
+  .video {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.3s ease;
   }
+
   .name {
     display: flex;
     flex-direction: column;
@@ -80,22 +90,15 @@ body {
   }
   .name > p {
     font-weight: 600;
-    font-size: 2.6rem;
-  }
-  .socials {
-    display: flex;
-    gap: 0.8rem;
-  }
-  .icon {
-    display: flex;
-    height: 25px;
-    transition: transform 0.3s ease-in-out;
-  }
-  .icon:hover {
-    transform: scale(1.08);
+    font-size: 3rem;
   }
 }
 /* about */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .about-section > p {
   text-align: justify;
   color: var(--color-text-muted);
@@ -107,8 +110,8 @@ body {
   margin-bottom: 3rem;
 }
 .projects-section > p {
-  font-size: 1.7rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 .projects-grid {
   display: flex;
@@ -121,7 +124,7 @@ body {
   --card-accent: #959aff;
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
-  max-width: 415px;
+  max-width: 495px;
   margin-top: 0.5rem;
   border-radius: 16px;
   position: relative;
@@ -225,8 +228,8 @@ body {
   margin-bottom: 3rem;
 }
 .experience-section > p {
-  font-size: 1.7rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 table {
   border-collapse: collapse;
@@ -271,9 +274,9 @@ table {
   margin-bottom: 3rem;
 }
 .skills-section > p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin-bottom: 1rem;
-  font-weight: 200;
 }
 
 .marquee__track {
@@ -311,9 +314,9 @@ table {
   margin-bottom: 3rem;
 }
 .education-section > p {
-  font-size: 1.7rem;
-  margin-bottom: 0.5rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .campus {
   display: flex;
@@ -335,9 +338,9 @@ table {
   margin-bottom: 3rem;
 }
 .certificates-section > p {
-  font-size: 1.7rem;
-  font-weight: 200;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .cert-grid {
   display: flex;
@@ -400,9 +403,9 @@ table {
   margin-bottom: 5rem;
 }
 .contact-section > p {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin-bottom: 1rem;
-  font-weight: 200;
 }
 .container {
   display: flex;
@@ -419,28 +422,23 @@ table {
   font-size: var(--font-size-main);
 }
 
-.contacts {
+.social-container {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
 }
+
 .social-card {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
-.icon-container {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  background-color: var(--icon-bg);
+.social-card:hover {
+  text-decoration: underline;
 }
+
 .link {
   display: flex;
-  flex-direction: column;
-  color: var(--color-text-muted);
+  gap: 0.5rem;
 }
 .link > p {
   text-transform: uppercase;
@@ -453,6 +451,7 @@ table {
   gap: 0.5rem;
   padding: 10px 20px;
   border-radius: 10px;
+  border: none;
   font-size: var(--font-main);
   width: fit-content;
   white-space: nowrap;
@@ -467,14 +466,14 @@ table {
   gap: 0.5rem;
 }
 .resume-link:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* footer */
 .footer {
   margin: 0 auto;
-  max-width: 850px;
-  margin-bottom: 2rem;
+  max-width: 1000px;
+  margin-bottom: 5rem;
 }
 .footer > p {
   color: var(--color-text);
@@ -508,6 +507,9 @@ span {
 
 @media (max-width: 480px) {
   /* header */
+  .nav-logo {
+    display: none;
+  }
   .nav-links {
     gap: 0.5rem;
     margin-right: 1rem;
@@ -527,7 +529,7 @@ span {
     gap: 1rem;
 
     .profile-img {
-      width: 200px;
+      width: 250px;
     }
 
     .name {
@@ -620,17 +622,26 @@ span {
     hyphens: auto;
     font-size: var(--font-size-body);
   }
+
+  .social-container {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .social-card {
+    padding: 0 5px;
+  }
   .link {
     font-size: var(--font-size-body);
   }
   .resume-link {
     border-radius: 10px;
-    width: 150px;
+    width: 130px;
     font-size: var(--font-size-body);
-  }
-  .social-card {
-    display: flex;
-    gap: 1rem;
   }
 
   /* footer */
