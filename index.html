@@ -86,12 +86,12 @@
         <div class="projects-section" id="projects">
           <div class="header">
             <p>Things I've Built</p>
-            <button class="header-button">
+            <a class="header-button" href="project.html">
               Explore My Works
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -103,9 +103,9 @@
                 <path d="M18 8L22 12L18 16" />
                 <path d="M2 12H22" />
               </svg>
-            </button>
+            </a>
           </div>
-          <div class="projects-grid" id="projects-grid"></div>
+          <div class="projects-grid" id="dev-grid"></div>
         </div>
 
         <!-- EXPERIENCE -->
@@ -327,7 +327,14 @@
 
     <script src="assets//js/hover.js"></script>
     <script src="assets/js/mode.js"></script>
-    <script src="assets/js/project.js"></script>
+    <script src="assets/js/project-data.js"></script>
+    <script src="assets/js/project-render.js"></script>
+    <script>
+      renderProjects(
+        "dev-grid",
+        projects.filter((p) => p.category === "development"),
+      );
+    </script>
     <script src="assets/js/tech.js"></script>
     <script src="assets/js/certification.js"></script>
     <script src="assets/js/scroll.js"></script>

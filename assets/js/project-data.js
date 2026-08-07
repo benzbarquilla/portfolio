@@ -2,6 +2,7 @@ const projects = [
   {
     image: "assets/images/projects/idp/1.png",
     title: "ISAAC Internal Developer Platform",
+    category: "development",
     description:
       "Internal Developer Platform designed to streamline development workflows by providing a centralized interface for managing internal tools and services.",
     techStack: [
@@ -14,6 +15,7 @@ const projects = [
   {
     image: "assets/images/projects/ecosentry/1.png",
     title: "EcoSentry",
+    category: "development",
     description:
       "IoT-based environmental monitoring system that detects chainsaw sounds using machine learning and transmits alerts through LoRa to a web dashboard.",
     techStack: [
@@ -28,6 +30,7 @@ const projects = [
   {
     image: "assets/images/projects/gebms/1.png",
     title: "Gym Equipment Borrowing & Management",
+    category: "development",
     description:
       " Web application for managing equipment inventory, streamlining borrowing and returns. ",
     techStack: [
@@ -41,34 +44,8 @@ const projects = [
   {
     image: "assets/images/projects/sis/1.png",
     title: "Student Information System",
+    category: "development",
     description: "Web application to manange and store student data",
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
   },
 ];
-
-const projectsGrid = document.getElementById("projects-grid");
-
-projects.forEach((project) => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-    <div class="card__shine"></div>
-    <div class="card__glow"></div>
-    <div class="card__content">
-    <img src="${project.image}" alt="Screenshot of ${project.title}" class="card__image" />
-      <div class="card__text">
-        <p class="card__title">${project.title}</p>
-        <p class="card__description">${project.description}</p>
-      </div>
-      <div class="card__footer">
-        ${project.techStack
-          .map(
-            (tech) =>
-              `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech.icon}.svg" alt="${tech.name}" title="${tech.name}" class="tech-icon" />`,
-          )
-          .join("")}
-      </div>
-    </div>
-  `;
-  projectsGrid.appendChild(card);
-});

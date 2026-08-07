@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="projects-section" id="projects">
+          <a class="back-button" href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-move-left-icon lucide-move-left"
+            >
+              <path d="M6 8L2 12L6 16" />
+              <path d="M2 12H22" />
+            </svg>
+            Back to Home
+          </a>
+          <div class="header">
+            <p>Development</p>
+          </div>
+          <div class="projects-grid" id="dev-grid"></div>
+
+          <div class="header">
+            <p>Productivity</p>
+          </div>
+          <div class="projects-grid" id="productivity-grid"></div>
+
+          <div class="header">
+            <p>Design & Content</p>
+          </div>
+          <div class="projects-grid" id="design-grid"></div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/project-data.js"></script>
+    <script src="assets/js/project-render.js"></script>
+    <script>
+      renderProjects(
+        "dev-grid",
+        projects.filter((p) => p.category === "development"),
+      );
+      renderProjects(
+        "digital-grid",
+        projects.filter((p) => p.category === "digital"),
+      );
+    </script>
+  </body>
+</html>
