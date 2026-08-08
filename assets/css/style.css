@@ -132,7 +132,7 @@ body {
   justify-content: space-between;
 }
 .header > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 300;
 }
 .header-button {
@@ -278,7 +278,7 @@ body {
   margin-bottom: 3rem;
 }
 .experience-section > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 300;
 }
 table {
@@ -364,7 +364,7 @@ table {
   margin-bottom: 3rem;
 }
 .education-section > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
@@ -388,7 +388,7 @@ table {
   margin-bottom: 3rem;
 }
 .certificates-section > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
@@ -453,7 +453,7 @@ table {
   margin-bottom: 5rem;
 }
 .contact-section > p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
