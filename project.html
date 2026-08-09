@@ -46,14 +46,14 @@
           <div class="projects-grid" id="dev-grid"></div>
 
           <div class="header">
-            <p>Productivity</p>
+            <p class="title">Productivity</p>
           </div>
           <div class="projects-grid" id="productivity-grid"></div>
 
           <div class="header">
-            <p>Design & Content</p>
+            <p class="title">Design & Content</p>
           </div>
-          <div class="projects-grid" id="design-grid"></div>
+          <div class="projects-grid" id="digital-grid"></div>
         </div>
       </div>
     </main>
@@ -64,6 +64,10 @@
       renderProjects(
         "dev-grid",
         projects.filter((p) => p.category === "development"),
+      );
+      renderProjects(
+        "productivity-grid",
+        projects.filter((p) => p.category === "productivity"),
       );
       renderProjects(
         "digital-grid",

@@ -1,3 +1,10 @@
+// Check icon if local or online
+function getIcon(tech) {
+  return tech.local
+    ? tech.icon
+    : `https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/${tech.icon}.svg`;
+}
+// Creates Card
 function renderProjectCard(project) {
   const card = document.createElement("div");
   card.className = "card";
@@ -14,7 +21,7 @@ function renderProjectCard(project) {
         ${project.techStack
           .map(
             (tech) =>
-              `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/${tech.icon}.svg" alt="${tech.name}" title="${tech.name}" class="tech-icon" />`,
+              `<img src="${getIcon(tech)}" alt="${tech.name}" title="${tech.name}" class="tech-icon" />`,
           )
           .join("")}
       </div>

@@ -1,4 +1,5 @@
 const projects = [
+  // Development
   {
     image: "assets/images/projects/idp/1.png",
     title: "ISAAC Internal Developer Platform",
@@ -45,7 +46,155 @@ const projects = [
     image: "assets/images/projects/sis/1.png",
     title: "Student Information System",
     category: "development",
-    description: "Web application to manange and store student data",
+    description:
+      "Simple CRUD Web application to manange and store student data",
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
+  },
+  // Productivity
+  {
+    image: "assets/images/projects/productivity/dashboard.png",
+    title: "Interactive Business Dashboard",
+    category: "productivity",
+    description:
+      "E-Commerce Business Dashboard data preprocessing and visualization",
+    techStack: [
+      {
+        name: "Microsoft Excel",
+        icon: "assets/icons/microsoft-excel.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/productivity/digital-marketing-ppt.png",
+    title: "Presentation",
+    category: "productivity",
+    description: "Simple presentation layout",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/productivity/cloudnordic-ppt.png",
+    title: "Presentation",
+    category: "productivity",
+    description: "Simple presentation layout",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/productivity/pestle-analysis-ppt.png",
+    title: "Presentation",
+    category: "productivity",
+    description: "Simple presentation layout",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  // Media
+  {
+    image: "assets/images/projects/digital/1.png",
+    title: "Cover Page",
+    category: "digital",
+    description: "Simple Travel Book Cover Page",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/digital/6.png",
+    title: "Cover Page",
+    category: "digital",
+    description: "Simple Cover/Hero Page",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/digital/2.png",
+    title: "Simple Poster",
+    category: "digital",
+    description: "",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/digital/5.png",
+    title: "Infographic",
+    category: "digital",
+    description: "",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/digital/7.png",
+    title: "Poster",
+    category: "digital",
+    description: "Digital marketing social media posts",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/digital/3.png",
+    title: "Brochure",
+    category: "digital",
+    description: "",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
+
+  {
+    image: "assets/images/projects/digital/4.png",
+    title: "Educational Pamphlet",
+    category: "digital",
+    description: "",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
   },
 ];
