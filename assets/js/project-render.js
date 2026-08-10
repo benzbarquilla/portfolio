@@ -4,10 +4,33 @@ function getIcon(tech) {
     ? tech.icon
     : `https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/${tech.icon}.svg`;
 }
+// Returns every available link for a project, in display order
+function getProjectLinks(link = {}) {
+  const linkConfig = [
+    { key: "view", label: "View" },
+    { key: "live", label: "Live View" },
+    { key: "demo", label: "Watch Demo" },
+  ];
+
+  return linkConfig
+    .filter((item) => link[item.key])
+    .map((item) => ({ url: link[item.key], label: item.label }));
+}
 // Creates Card
 function renderProjectCard(project) {
   const card = document.createElement("div");
   card.className = "card";
+
+  const links = getProjectLinks(project.link);
+  const linksHTML = links
+    .map(
+      (link) => `
+      <a href="${link.url}" target="_blank" rel="noopener" class="card__link-btn">
+        ${link.label}
+      </a>`,
+    )
+    .join("");
+
   card.innerHTML = `
     <div class="card__shine"></div>
     <div class="card__glow"></div>
@@ -24,12 +47,13 @@ function renderProjectCard(project) {
               `<img src="${getIcon(tech)}" alt="${tech.name}" title="${tech.name}" class="tech-icon" />`,
           )
           .join("")}
+          <div class="card__links">${linksHTML}</div>
       </div>
     </div>
   `;
   return card;
 }
-
+// Render
 function renderProjects(containerId, projectList) {
   const container = document.getElementById(containerId);
   if (!container) return;

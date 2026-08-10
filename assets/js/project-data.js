@@ -17,6 +17,10 @@ const projects = [
     image: "assets/images/projects/ecosentry/1.png",
     title: "EcoSentry",
     category: "development",
+    link: {
+      view: "https://github.com/benzbarquilla/capstone-project",
+      demo: "https://drive.google.com/file/d/1Ktp26auyY5KzcxQIN5qC6KFxJGudS456/view?usp=sharing",
+    },
     description:
       "IoT-based environmental monitoring system that detects chainsaw sounds using machine learning and transmits alerts through LoRa to a web dashboard.",
     techStack: [
@@ -32,6 +36,7 @@ const projects = [
     image: "assets/images/projects/gebms/1.png",
     title: "Gym Equipment Borrowing & Management",
     category: "development",
+    link: { view: "https://github.com/benzbarquilla/gebms-react" },
     description:
       " Web application for managing equipment inventory, streamlining borrowing and returns. ",
     techStack: [
@@ -46,9 +51,22 @@ const projects = [
     image: "assets/images/projects/sis/1.png",
     title: "Student Information System",
     category: "development",
+    link: { view: "https://github.com/benzbarquilla/student-info-system" },
     description:
       "Simple CRUD Web application to manange and store student data",
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
+  },
+  {
+    image: "assets/images/projects/applandingpage/1.png",
+    title: "Gymmigo App Landing Page",
+    category: "development",
+    link: { live: "https://benzbarquilla.github.io/gymmigo-landing-page/" },
+    description:
+      "Simple App version of Gym Equipment Borrowing & Management System",
+    techStack: [
+      { name: "HTML", icon: "html5/html5-original" },
+      { name: "CSS", icon: "css3/css3-original" },
+    ],
   },
   // Productivity
   {
@@ -70,6 +88,7 @@ const projects = [
     title: "Presentation",
     category: "productivity",
     description: "Simple presentation layout",
+    link: { view: "https://canva.link/xjbx5gkqwowtofa" },
     techStack: [
       {
         name: "Canva",
@@ -78,24 +97,13 @@ const projects = [
       },
     ],
   },
-  {
-    image: "assets/images/projects/productivity/cloudnordic-ppt.png",
-    title: "Presentation",
-    category: "productivity",
-    description: "Simple presentation layout",
-    techStack: [
-      {
-        name: "Canva",
-        icon: "assets/icons/canva.svg",
-        local: true,
-      },
-    ],
-  },
+
   {
     image: "assets/images/projects/productivity/pestle-analysis-ppt.png",
     title: "Presentation",
     category: "productivity",
     description: "Simple presentation layout",
+    link: { view: "https://canva.link/g6imnf56azm05b9" },
     techStack: [
       {
         name: "Canva",
@@ -106,10 +114,28 @@ const projects = [
   },
   // Media
   {
+    image: "assets/images/projects/digital/8.png",
+    title: "Minimim Viable Product",
+    category: "digital",
+    link: {
+      view: "https://drive.google.com/file/d/1FE84ozsIgz8qdoMRmRWLzaV8hIiJmsqs/view?usp=sharing",
+    },
+    description:
+      "A short, simple clip used by our capstone startups to test demand, explain an idea, or pitch a product before building it fully.",
+    techStack: [
+      {
+        name: "Capcut",
+        icon: "assets/icons/capcut.svg",
+        local: true,
+      },
+    ],
+  },
+  {
     image: "assets/images/projects/digital/1.png",
     title: "Cover Page",
     category: "digital",
-    description: "Simple Travel Book Cover Page",
+    description: "Simple travel book cover page",
+    link: { view: "https://canva.link/40i97iy7xbmzoi3" },
     techStack: [
       {
         name: "Canva",
@@ -122,20 +148,8 @@ const projects = [
     image: "assets/images/projects/digital/6.png",
     title: "Cover Page",
     category: "digital",
-    description: "Simple Cover/Hero Page",
-    techStack: [
-      {
-        name: "Canva",
-        icon: "assets/icons/canva.svg",
-        local: true,
-      },
-    ],
-  },
-  {
-    image: "assets/images/projects/digital/2.png",
-    title: "Simple Poster",
-    category: "digital",
-    description: "",
+    link: { view: "https://canva.link/mtoqsf3zgkvb2z3" },
+    description: "Simple cover/hero page",
     techStack: [
       {
         name: "Canva",
@@ -148,7 +162,8 @@ const projects = [
     image: "assets/images/projects/digital/5.png",
     title: "Infographic",
     category: "digital",
-    description: "",
+    link: { view: "https://canva.link/68iip51dtum7jm8" },
+    description: "Simple infographic",
     techStack: [
       {
         name: "Canva",
@@ -162,6 +177,7 @@ const projects = [
     title: "Poster",
     category: "digital",
     description: "Digital marketing social media posts",
+    link: { view: "https://canva.link/2e73mbovlubggu5" },
     techStack: [
       {
         name: "Canva",
@@ -171,10 +187,22 @@ const projects = [
     ],
   },
   {
+    image: "assets/images/projects/digital/9.png",
+    title: "Research Poster",
+    category: "digital",
+    description: "Rat Repellant Capstone Poster",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "figma/figma-original",
+      },
+    ],
+  },
+  {
     image: "assets/images/projects/digital/3.png",
     title: "Brochure",
     category: "digital",
-    description: "",
+    description: "Simple promotional brochure",
     techStack: [
       {
         name: "Canva",
@@ -186,9 +214,9 @@ const projects = [
 
   {
     image: "assets/images/projects/digital/4.png",
-    title: "Educational Pamphlet",
+    title: "Pamphlet",
     category: "digital",
-    description: "",
+    description: "Simple educational pamphlet",
     techStack: [
       {
         name: "Canva",

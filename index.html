@@ -69,14 +69,13 @@
             <div class="about-section">
               <p>
                 I'm an IT graduate with a strong interest in frontend
-                development and building practical, user-focused software
-                solutions.
+                development, video editing, and exploring new things.
               </p>
 
               <p>
                 I enjoy collaborating with teams, leveraging AI tools to improve
-                productivity, and continuously expanding my skills to contribute
-                across different IT roles.
+                productivity. I'm continuously exploring to expand my skills to
+                contribute across different IT roles.
               </p>
             </div>
           </div>
@@ -133,7 +132,7 @@
 
         <!-- EDUCATION -->
         <div class="education-section">
-          <p>Education</p>
+          <p>My Background</p>
           <div class="campus">
             <div class="year"><p>2022-2026</p></div>
             <div>
@@ -147,7 +146,7 @@
 
         <!-- CERTIFICATES -->
         <div class="certificates-section">
-          <p>Certifications</p>
+          <p>Certifications and Learnings</p>
           <div class="cert-grid" id="cert-grid"></div>
         </div>
 
@@ -158,7 +157,7 @@
             <div class="description">
               <p>
                 I'm always open to opportunities where I can learn, contribute,
-                and grow. Whether it's frontend development, IT support,
+                and grow. Whether it's web development, IT support,
                 administrative tasks, or collaborating on digital projects, I'd
                 love to connect and see how I can help. Feel free to reach out
                 if you'd like to work together or simply have a conversation.
@@ -332,7 +331,7 @@
     <script>
       renderProjects(
         "dev-grid",
-        projects.filter((p) => p.category === "development"),
+        projects.filter((p) => p.category === "development").slice(0, 4),
       );
     </script>
     <script src="assets/js/tech.js"></script>
