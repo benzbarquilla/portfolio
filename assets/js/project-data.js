@@ -121,7 +121,7 @@ const projects = [
       view: "https://drive.google.com/file/d/1FE84ozsIgz8qdoMRmRWLzaV8hIiJmsqs/view?usp=sharing",
     },
     description:
-      "A short, simple clip used by our capstone startups to test demand, explain an idea, or pitch a product before building it fully.",
+      "A short simple video used by our capstone startup to explain an idea, or pitch a product before building it fully.",
     techStack: [
       {
         name: "Capcut",
