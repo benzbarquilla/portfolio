@@ -46,7 +46,7 @@
           <div class="projects-grid" id="productivity-grid"></div>
 
           <div class="header">
-            <p class="title">Design & Content</p>
+            <p class="title">Content</p>
           </div>
           <div class="projects-grid" id="digital-grid"></div>
 
@@ -71,7 +71,7 @@
       );
       renderProjects(
         "digital-grid",
-        projects.filter((p) => p.category === "digital"),
+        projects.filter((p) => p.category === "digital").slice(0, 1),
       );
     </script>
   </body>
