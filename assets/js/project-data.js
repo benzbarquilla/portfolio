@@ -131,6 +131,24 @@ const projects = [
     ],
   },
   {
+    image: "assets/images/projects/digital/2.png",
+    title: "Graduates Message",
+    category: "digital",
+    link: {
+      view: "https://drive.google.com/file/d/1MzzSAZ1xv0ATZdYUmuj7DEP_bF5B52Nf/view?usp=sharing",
+    },
+    description:
+      "I watched a long form video, cut a part of the clip, edited it, added music and sfx, turned it in to a shorts.",
+    techStack: [
+      {
+        name: "Capcut",
+        icon: "assets/icons/capcut.svg",
+        local: true,
+      },
+    ],
+  },
+
+  {
     image: "assets/images/projects/digital/1.png",
     title: "Cover Page",
     category: "digital",
