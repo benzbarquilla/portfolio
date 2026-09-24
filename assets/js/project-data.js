@@ -1,6 +1,21 @@
 const projects = [
   // Development
   {
+    image: "assets/images/projects/apex/desktop-1.png",
+    title: "Apex Home Cleaning",
+    category: "development",
+    description:
+      "A responsive service-based website concept designed for a residential cleaning company. The project focuses on clear service presentation, strong calls-to-action, responsive layouts, and a clean, professional visual identity.",
+    techStack: [
+      { name: "WordPress", icon: "assets/icons/wordpress.svg", local: "true" },
+      {
+        name: "Elementor",
+        icon: "assets/icons/elementor.svg",
+        local: "true",
+      },
+    ],
+  },
+  {
     image: "assets/images/projects/idp/1.png",
     title: "ISAAC Internal Developer Platform",
     category: "development",
@@ -18,7 +33,7 @@ const projects = [
     title: "EcoSentry",
     category: "development",
     link: {
-      view: "https://github.com/benzbarquilla/capstone-project",
+      code: "https://github.com/benzbarquilla/capstone-project",
       demo: "https://drive.google.com/file/d/1Ktp26auyY5KzcxQIN5qC6KFxJGudS456/view?usp=sharing",
     },
     description:
@@ -36,7 +51,7 @@ const projects = [
     image: "assets/images/projects/gebms/1.png",
     title: "Gym Equipment Borrowing & Management",
     category: "development",
-    link: { view: "https://github.com/benzbarquilla/gebms-react" },
+    link: { code: "https://github.com/benzbarquilla/gebms-react" },
     description:
       " Web application for managing equipment inventory, streamlining borrowing and returns. ",
     techStack: [
@@ -51,7 +66,7 @@ const projects = [
     image: "assets/images/projects/sis/1.png",
     title: "Student Information System",
     category: "development",
-    link: { view: "https://github.com/benzbarquilla/student-info-system" },
+    link: { code: "https://github.com/benzbarquilla/student-info-system" },
     description:
       "Simple CRUD Web application to manange and store student data",
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
@@ -60,7 +75,7 @@ const projects = [
     image: "assets/images/projects/applandingpage/1.png",
     title: "Gymmigo App Landing Page",
     category: "development",
-    link: { live: "https://benzbarquilla.github.io/gymmigo-landing-page/" },
+    link: { view: "https://benzbarquilla.github.io/gymmigo-landing-page/" },
     description:
       "Simple App version of Gym Equipment Borrowing & Management System",
     techStack: [

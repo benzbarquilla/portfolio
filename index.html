@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap"
       rel="stylesheet"
     />
 
@@ -29,7 +29,6 @@
     <!-- NAVBAR -->
     <header class="navbar" id="navbar">
       <nav class="nav-container">
-        <!-- <a href="#" class="nav-logo">Benz Barquilla</a> -->
         <ul class="nav-links" id="nav-links">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -78,6 +77,30 @@
                 contribute across different IT roles.
               </p>
             </div>
+            <button class="resume-button">
+              <a
+                href="assets/files/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Resume
+              </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-move-right-icon lucide-move-right"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -127,7 +150,7 @@
 
         <!-- SKILLS/TECH -->
         <div class="skills-section">
-          <p>What I Work With</p>
+          <p>Tools I Use</p>
           <div class="marquee__track" id="tech-pills"></div>
         </div>
 
@@ -165,16 +188,6 @@
               </p>
 
               <div class="social-container">
-                <button class="resume-button">
-                  <a
-                    href="assets/files/resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Resume
-                  </a>
-                </button>
-
                 <div class="social-card">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -303,9 +316,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p class="footer-name">
+      <!-- <p class="footer-name">
         Benz Barquilla <span>|</span><span> Malaybalay City, PH</span>
-      </p>
+      </p> -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -333,10 +346,6 @@
       renderProjects(
         "dev-grid",
         projects.filter((p) => p.category === "development").slice(0, 2),
-      );
-      renderProjects(
-        "digital-grid",
-        projects.filter((p) => p.category === "digital").slice(0, 2),
       );
     </script>
     <script src="assets/js/tech.js"></script>

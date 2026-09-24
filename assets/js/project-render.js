@@ -7,9 +7,9 @@ function getIcon(tech) {
 // Returns every available link for a project, in display order
 function getProjectLinks(link = {}) {
   const linkConfig = [
-    { key: "view", label: "View" },
-    { key: "live", label: "Live View" },
-    { key: "demo", label: "Watch Demo" },
+    { key: "view", label: "Live" },
+    { key: "code", label: "Code" },
+    { key: "demo", label: "Demo" },
   ];
 
   return linkConfig
