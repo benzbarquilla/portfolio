@@ -22,6 +22,9 @@ const projects = [
     image: "assets/images/projects/idp/1.png",
     title: "ISAAC Internal Developer Platform",
     category: "development",
+    link: {
+      demo: "https://drive.google.com/drive/folders/1veUNi_15-Dk4YzHJiBd1vdJbfRHMwtzt?usp=sharing",
+    },
     description:
       "Internal Developer Platform designed to streamline development workflows by providing a centralized interface for managing internal tools and services.",
     techStack: [
