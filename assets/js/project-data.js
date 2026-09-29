@@ -75,7 +75,7 @@ const projects = [
     image: "assets/images/projects/applandingpage/1.png",
     title: "Gymmigo App Landing Page",
     category: "development",
-    link: { view: "https://benzbarquilla.github.io/gymmigo-landing-page/" },
+    link: { view: "https://benzbarquilla.github.io/gymmigo-landingpage/" },
     description:
       "Simple App version of Gym Equipment Borrowing & Management System",
     techStack: [
