@@ -4,6 +4,9 @@ const projects = [
     image: "assets/images/projects/apex/desktop-1.png",
     title: "Apex Home Cleaning",
     category: "development",
+    link: {
+      demo: "https://drive.google.com/drive/folders/1veUNi_15-Dk4YzHJiBd1vdJbfRHMwtzt?usp=sharing",
+    },
     description:
       "A responsive service-based website concept designed for a residential cleaning company. The project focuses on clear service presentation, strong calls-to-action, responsive layouts, and a clean, professional visual identity.",
     techStack: [
