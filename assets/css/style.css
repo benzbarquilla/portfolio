@@ -96,7 +96,6 @@ body {
     typing 2s steps(13, end) forwards,
     blink 0.75s step-end infinite;
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -174,7 +173,7 @@ body {
   --card-accent: #959aff;
   --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
-  max-width: 495px;
+  width: 495px;
   margin-top: 0.5rem;
   border-radius: 10px;
   position: relative;
@@ -183,17 +182,7 @@ body {
   box-shadow: var(--card-shadow);
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
 }
-.card__glow {
-  position: absolute;
-  inset: -10px;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(124, 58, 237, 0.3) 0%,
-    rgba(124, 58, 237, 0) 70%
-  );
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
+
 .title {
   margin-top: 5rem;
 }
@@ -271,13 +260,7 @@ body {
     0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
-.card:hover .card__shine {
-  opacity: 1;
-  animation: shine 3s infinite;
-}
-.card:hover .card__glow {
-  opacity: 1;
-}
+
 .card:hover .card__image {
   transform: translateY(-5px) scale(1.03);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -305,6 +288,7 @@ body {
 .experience-section > p {
   font-size: 1.7rem;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 table {
   border-collapse: collapse;
@@ -351,7 +335,7 @@ table {
 .skills-section > p {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .marquee__track {
@@ -391,7 +375,7 @@ table {
 .education-section > p {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .campus {
   display: flex;
@@ -408,68 +392,152 @@ table {
   font-size: var(--font-size-main);
 }
 
+/* outside the ide */
+.outside-section {
+  margin-bottom: 3rem;
+}
+.outside-section > p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+.outside-container {
+  display: flex;
+  gap: 5rem;
+}
+.about-me {
+  margin-top: 2rem;
+  text-align: justify;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-main);
+  width: 60%;
+}
+.badges {
+  display: flex;
+  gap: 1rem; /* 16px */
+  margin-top: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badges > button {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  padding: 2px 0.5rem; /* 8px*/
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.badges .neutral {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid color-mix(in srgb, var(--color-text) 20%, transparent);
+}
+
+.stack-wrap {
+  width: 230px;
+  height: 230px;
+}
+
+.stack-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 600px;
+}
+
+.stack-card-rotate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.stack-card-rotate:active {
+  cursor: grabbing;
+}
+
+.stack-container.drag-disabled .stack-card-rotate {
+  cursor: pointer;
+  touch-action: auto;
+}
+
+.stack-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: 90% 90%;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.stack-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
 /* certifications */
 .certificates-section {
   margin-bottom: 3rem;
 }
+
 .certificates-section > p {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
+
 .cert-grid {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
-}
-.cert-card {
-  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   gap: 1rem;
-  max-width: 240px;
-  padding: 5px 5px 10px 5px;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: var(--card-shadow);
 }
-.cert-card:hover {
-  box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  transform: scale(1.04);
+
+.cert-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 180px;
+  text-decoration: none;
+  color: var(--color-text);
 }
-.badge {
-  width: 20%;
+
+.cert-badge img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
 }
-.cert {
+
+.cert-badge:hover img {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.cert-name {
+  font-size: var(--font-size-body);
+  line-height: 1rem;
   text-align: center;
-}
-.cert-title {
-  font-weight: 700;
-  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* cap at 2 lines */
+  -webkit-line-clamp: 3; /* cap at 3 lines, full title is in the tooltip */
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
-.program {
-  font-size: 0.7rem;
-  color: var(--color-text-muted);
-}
-.verify-btn {
-  color: var(--color-text);
-  font-size: var(--font-size-body);
 
-  border: none;
-  cursor: pointer;
-  background: none;
-  margin-top: auto;
-}
-.verify-btn:hover {
-  text-decoration: underline;
+.cert-badge:hover .cert-name {
+  color: var(--color-text);
 }
 
 /* contacts */
@@ -581,7 +649,7 @@ span {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   /* header */
   .nav-logo {
     display: none;
@@ -644,6 +712,9 @@ span {
     text-align: center;
     align-items: center;
   }
+  .card {
+    width: 100%;
+  }
   /* experience */
   .experience-section {
     padding: 0px 10px;
@@ -676,6 +747,29 @@ span {
   .campus {
     padding: 0px 10px;
   }
+  /* outside */
+  .outside-section {
+    padding: 0px 10px;
+  }
+  .outside-section > p {
+    padding: 0px 10px;
+    font-size: 20px;
+  }
+  .outside-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .about-me {
+    margin-top: 1rem;
+    font-size: var(--font-size-body);
+    width: 100%;
+  }
+  .badges {
+    justify-content: center;
+  }
+  .stack-wrap {
+    margin-inline: auto;
+  }
 
   /* certifications */
   .certificates-section {
@@ -685,8 +779,14 @@ span {
     justify-content: center;
   }
   .certificates-section > p {
-    padding: 0px 15px;
+    padding: 0px 10px;
     font-size: 20px;
+  }
+  .cert-badge {
+    width: 100px;
+  }
+  .cert-grid {
+    justify-content: center;
   }
 
   /* contacts */
@@ -694,6 +794,7 @@ span {
     padding: 0px 10px;
   }
   .contact-section > p {
+    padding: 0px 10px;
     font-size: 20px;
     margin-bottom: 0.5rem;
   }

@@ -31,26 +31,23 @@ const certs = [
   },
 ];
 
-const certCard = document.getElementById("cert-grid");
+const certGrid = document.getElementById("cert-grid");
 
-function renderCard() {
+function renderCerts() {
   certs.forEach((cert) => {
-    const card = document.createElement("div");
-    card.className = "cert-card";
-    card.innerHTML = `
-              <img
-                class="badge"
-                src="${cert.image}"
-                alt="CCNA: Introduction to Networks"
-              />
-              <div class="cert">
-                <p class="cert-title">${cert.title}</p>
-                <p class="program">${cert.program}</p>
-              </div>
-              <a href="${cert.link}" target="_blank" rel="noopener" class="verify-btn">Verify</a>
-            `;
-    certCard.appendChild(card);
+    const item = document.createElement("a");
+    item.className = "cert-badge";
+    item.href = cert.link;
+    item.target = "_blank";
+    item.rel = "noopener";
+    item.title = `${cert.title} — ${cert.program}`; // tooltip on hover
+    item.setAttribute("aria-label", `Verify ${cert.title} by ${cert.program}`);
+    item.innerHTML = `
+      <img src="${cert.image}" alt="${cert.title}" />
+      <span class="cert-name">${cert.title}</span>
+    `;
+    certGrid.appendChild(item);
   });
 }
 
-renderCard();
+renderCerts();
