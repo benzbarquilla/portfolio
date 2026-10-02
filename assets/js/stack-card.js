@@ -28,6 +28,8 @@ function createStack(container, images, options = {}) {
     const img = document.createElement("img");
     img.className = "stack-card-image";
     img.src = src;
+    img.loading = "lazy"; // add
+    img.decoding = "async"; // add
     img.alt = `card-${i + 1}`;
     img.draggable = false;
 
