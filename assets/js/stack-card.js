@@ -28,8 +28,8 @@ function createStack(container, images, options = {}) {
     const img = document.createElement("img");
     img.className = "stack-card-image";
     img.src = src;
-    img.loading = "lazy"; // add
-    img.decoding = "async"; // add
+    img.loading = "lazy";
+    img.decoding = "async";
     img.alt = `card-${i + 1}`;
     img.draggable = false;
 
@@ -145,14 +145,14 @@ function createStack(container, images, options = {}) {
 
 // usage
 const images = [
-  "assets/images/profile/1.jpg",
-  "assets/images/profile/2.jpg",
-  "assets/images/profile/3.jpg",
-  "assets/images/profile/4.jpg",
-  "assets/images/profile/5.jpg",
-  "assets/images/profile/6.jpg",
-  "assets/images/profile/7.jpg",
-  "assets/images/profile/8.jpg",
+  "assets/images/profile/1.webp",
+  "assets/images/profile/2.webp",
+  "assets/images/profile/3.webp",
+  "assets/images/profile/4.webp",
+  "assets/images/profile/5.webp",
+  "assets/images/profile/6.webp",
+  "assets/images/profile/7.webp",
+  "assets/images/profile/8.webp",
 ];
 
 createStack(document.getElementById("stack"), images, {

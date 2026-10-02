@@ -1,7 +1,7 @@
 const projects = [
   // Development
   {
-    image: "assets/images/projects/apex/desktop-1.png",
+    image: "assets/images/projects/apex/desktop-1.webp",
     title: "Apex Home Cleaning",
     category: "development",
     link: {
@@ -19,7 +19,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/idp/1.png",
+    image: "assets/images/projects/idp/1.webp",
     title: "ISAAC Internal Developer Platform",
     category: "development",
     link: {
@@ -35,7 +35,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/ecosentry/1.png",
+    image: "assets/images/projects/ecosentry/1.webp",
     title: "EcoSentry",
     category: "development",
     link: {
@@ -54,7 +54,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/gebms/1.png",
+    image: "assets/images/projects/gebms/1.webp",
     title: "Gym Equipment Borrowing & Management",
     category: "development",
     link: { code: "https://github.com/benzbarquilla/gebms-react" },
@@ -69,7 +69,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/sis/1.png",
+    image: "assets/images/projects/sis/1.webp",
     title: "Student Information System",
     category: "development",
     link: { code: "https://github.com/benzbarquilla/student-info-system" },
@@ -78,7 +78,7 @@ const projects = [
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
   },
   {
-    image: "assets/images/projects/applandingpage/1.png",
+    image: "assets/images/projects/applandingpage/1.webp",
     title: "Gymmigo App Landing Page",
     category: "development",
     link: { view: "https://benzbarquilla.github.io/gymmigo-landingpage/" },
@@ -91,7 +91,7 @@ const projects = [
   },
   // Productivity
   {
-    image: "assets/images/projects/productivity/dashboard.png",
+    image: "assets/images/projects/productivity/dashboard.webp",
     title: "Interactive Business Dashboard",
     category: "productivity",
     description:
@@ -105,7 +105,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/productivity/digital-marketing-ppt.png",
+    image: "assets/images/projects/productivity/digital-marketing-ppt.webp",
     title: "Presentation",
     category: "productivity",
     description: "Simple presentation layout",
@@ -120,7 +120,7 @@ const projects = [
   },
 
   {
-    image: "assets/images/projects/productivity/pestle-analysis-ppt.png",
+    image: "assets/images/projects/productivity/pestle-analysis-ppt.webp",
     title: "Presentation",
     category: "productivity",
     description: "Simple presentation layout",
@@ -135,7 +135,7 @@ const projects = [
   },
   // Media
   {
-    image: "assets/images/projects/digital/8.png",
+    image: "assets/images/projects/digital/8.webp",
     title: "Minimim Viable Product",
     category: "digital",
     link: {
@@ -152,7 +152,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/2.png",
+    image: "assets/images/projects/digital/2.webp",
     title: "Graduates Message",
     category: "digital",
     link: {
@@ -170,7 +170,7 @@ const projects = [
   },
 
   {
-    image: "assets/images/projects/digital/1.png",
+    image: "assets/images/projects/digital/1.webp",
     title: "Cover Page",
     category: "digital",
     description: "Simple travel book cover page",
@@ -184,7 +184,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/6.png",
+    image: "assets/images/projects/digital/6.webp",
     title: "Cover Page",
     category: "digital",
     link: { view: "https://canva.link/mtoqsf3zgkvb2z3" },
@@ -198,7 +198,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/5.png",
+    image: "assets/images/projects/digital/5.webp",
     title: "Infographic",
     category: "digital",
     link: { view: "https://canva.link/68iip51dtum7jm8" },
@@ -212,7 +212,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/7.png",
+    image: "assets/images/projects/digital/7.webp",
     title: "Poster",
     category: "digital",
     description: "Digital marketing social media posts",
@@ -226,7 +226,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/9.png",
+    image: "assets/images/projects/digital/9.webp",
     title: "Research Poster",
     category: "digital",
     description: "Rat Repellant Capstone Poster",
@@ -238,7 +238,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/3.png",
+    image: "assets/images/projects/digital/3.webp",
     title: "Brochure",
     category: "digital",
     description: "Simple promotional brochure",
@@ -252,7 +252,7 @@ const projects = [
   },
 
   {
-    image: "assets/images/projects/digital/4.png",
+    image: "assets/images/projects/digital/4.webp",
     title: "Pamphlet",
     category: "digital",
     description: "Simple educational pamphlet",
