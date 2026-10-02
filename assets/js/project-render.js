@@ -35,7 +35,7 @@ function renderProjectCard(project) {
     <div class="card__shine"></div>
     <div class="card__glow"></div>
     <div class="card__content">
-      <img src="${project.image}" alt="Screenshot of ${project.title}" class="card__image" />
+      <img src="${project.image}" alt="Screenshot of ${project.title}" class="card__image" loading="lazy" />
       <div class="card__text">
         <p class="card__title">${project.title}</p>
         <p class="card__description">${project.description}</p>

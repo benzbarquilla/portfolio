@@ -121,9 +121,18 @@ body {
   color: var(--color-text-muted);
   font-size: var(--font-size-main);
 }
+/* services */
+.services-section {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.services-section > p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
 /* projects */
 .projects-section {
-  margin-top: 5rem;
   margin-bottom: 3rem;
 }
 .header {
@@ -508,14 +517,13 @@ table {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  width: 180px;
+  width: 185px;
   text-decoration: none;
   color: var(--color-text);
 }
 
 .cert-badge img {
-  width: 100px;
-  height: 100px;
+  height: 50px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
