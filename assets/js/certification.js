@@ -43,7 +43,7 @@ function renderCerts() {
     item.title = `${cert.title} — ${cert.program}`; // tooltip on hover
     item.setAttribute("aria-label", `Verify ${cert.title} by ${cert.program}`);
     item.innerHTML = `
-      <img src="${cert.image}" alt="${cert.title}" />
+      <img src="${cert.image}" alt="${cert.title}" loading="lazy" />
       <span class="cert-name">${cert.title}</span>
     `;
     certGrid.appendChild(item);

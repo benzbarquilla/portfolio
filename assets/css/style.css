@@ -509,7 +509,6 @@ table {
 .cert-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .cert-badge {
@@ -517,7 +516,7 @@ table {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  width: 185px;
+  width: 200px;
   text-decoration: none;
   color: var(--color-text);
 }
@@ -783,18 +782,16 @@ span {
   .certificates-section {
     padding: 0px 10px;
   }
-  .cert-grid {
-    justify-content: center;
-  }
   .certificates-section > p {
     padding: 0px 10px;
     font-size: 20px;
   }
   .cert-badge {
-    width: 100px;
+    width: 180px;
   }
   .cert-grid {
-    justify-content: center;
+    gap: 0.5rem;
+    justify-content: start;
   }
 
   /* contacts */
