@@ -108,7 +108,7 @@ const projects = [
     image: "assets/images/projects/productivity/digital-marketing-ppt.webp",
     title: "Presentation",
     category: "productivity",
-    description: "Simple presentation layout",
+    description: "Simple presentation",
     link: { view: "https://canva.link/xjbx5gkqwowtofa" },
     techStack: [
       {
@@ -123,7 +123,7 @@ const projects = [
     image: "assets/images/projects/productivity/pestle-analysis-ppt.webp",
     title: "Presentation",
     category: "productivity",
-    description: "Simple presentation layout",
+    description: "Simple presentation",
     link: { view: "https://canva.link/g6imnf56azm05b9" },
     techStack: [
       {
@@ -136,7 +136,7 @@ const projects = [
   // Media
   {
     image: "assets/images/projects/digital/8.webp",
-    title: "Minimim Viable Product",
+    title: "Minimim Viable Product (MVP)",
     category: "digital",
     link: {
       view: "https://drive.google.com/file/d/1FE84ozsIgz8qdoMRmRWLzaV8hIiJmsqs/view?usp=sharing",
@@ -153,13 +153,12 @@ const projects = [
   },
   {
     image: "assets/images/projects/digital/2.webp",
-    title: "Graduates Message",
+    title: "Shorts/Reels",
     category: "digital",
     link: {
       view: "https://drive.google.com/file/d/1MzzSAZ1xv0ATZdYUmuj7DEP_bF5B52Nf/view?usp=sharing",
     },
-    description:
-      "I watched a long form video, cut a part of the clip, edited it, added music and sfx, turned it in to a shorts.",
+    description: "I turned a long video into a fully edited short.",
     techStack: [
       {
         name: "Capcut",
