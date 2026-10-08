@@ -43,35 +43,22 @@
           <div class="header">
             <p>Admin & Productivity</p>
           </div>
+          <p class="brief-info">
+            Spreadsheets, dashboard, and presentations. I can help with data
+            entry, email and calendar management, file organization, and
+            research.
+          </p>
           <div class="projects-grid" id="productivity-grid"></div>
-
-          <div class="header">
-            <p class="title">Content & Social Media</p>
-          </div>
-          <div class="projects-grid" id="digital-grid"></div>
-
-          <div class="header">
-            <p class="title">Web & Development</p>
-          </div>
-          <div class="projects-grid" id="dev-grid"></div>
         </div>
       </div>
     </main>
-    <script src="assets/js/mode.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/project-data.js"></script>
     <script src="assets/js/project-render.js"></script>
     <script>
       renderProjects(
-        "dev-grid",
-        projects.filter((p) => p.category === "development"),
-      );
-      renderProjects(
         "productivity-grid",
         projects.filter((p) => p.category === "productivity"),
-      );
-      renderProjects(
-        "digital-grid",
-        projects.filter((p) => p.category === "digital"),
       );
     </script>
   </body>

@@ -148,7 +148,7 @@
                 <li>File &amp; Document Organization</li>
                 <li>Internet Research</li>
               </ul>
-              <a href="#productivity" class="service-link"
+              <a href="productivity.html" class="service-link"
                 >View VA Work
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@
                 <li>Content Calendar</li>
                 <li>Caption Writing</li>
               </ul>
-              <a href="#content" class="service-link"
+              <a href="content.html" class="service-link"
                 >View Content Work
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -241,7 +241,7 @@
                 <li>Responsive Design</li>
                 <li>Basic Site Maintenance</li>
               </ul>
-              <a href="#development" class="service-link"
+              <a href="development.html" class="service-link"
                 >View Web Projects
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,27 +267,9 @@
         <div class="projects-section" id="projects">
           <div class="header">
             <p>Things I've Built</p>
-            <a class="header-button" href="project.html">
-              Explore My Works
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-move-right-icon lucide-move-right"
-              >
-                <path d="M18 8L22 12L18 16" />
-                <path d="M2 12H22" />
-              </svg>
-            </a>
           </div>
           <div class="projects-grid" id="dev-grid"></div>
-          <div class="projects-grid" id="digital-grid"></div>
+          <div class="projects-grid" id="productivity-grid"></div>
         </div>
 
         <!-- EXPERIENCE -->
@@ -300,7 +282,7 @@
               <th></th>
             </tr>
             <tr>
-              <th class="date">Feb - Mar 2026</th>
+              <th class="date">Feb - May 2026</th>
               <th class="role">Front-end Developer</th>
               <th class="company">Project Moonshot IT Solutions</th>
             </tr>
@@ -443,10 +425,10 @@
                       stroke-width="1"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="lucide lucide-move-up-right-icon lucide-move-up-right"
+                      aria-hidden="true"
                     >
-                      <path d="M13 5H19V11" />
-                      <path d="M19 5L5 19" />
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
                     </svg>
                   </div>
                 </div>
@@ -506,10 +488,10 @@
                       stroke-width="1"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="lucide lucide-move-up-right-icon lucide-move-up-right"
+                      aria-hidden="true"
                     >
-                      <path d="M13 5H19V11" />
-                      <path d="M19 5L5 19" />
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
                     </svg>
                   </div>
                 </div>
@@ -546,10 +528,10 @@
                       stroke-width="1"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="lucide lucide-move-up-right-icon lucide-move-up-right"
+                      aria-hidden="true"
                     >
-                      <path d="M13 5H19V11" />
-                      <path d="M19 5L5 19" />
+                      <path d="M7 7h10v10" />
+                      <path d="M7 17 17 7" />
                     </svg>
                   </div>
                 </div>
@@ -585,13 +567,18 @@
     </footer>
 
     <script src="assets/js/hover.js"></script>
-    <script src="assets/js/mode.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/project-data.js"></script>
     <script src="assets/js/project-render.js"></script>
     <script>
       renderProjects(
         "dev-grid",
         projects.filter((p) => p.category === "development").slice(0, 2),
+      );
+
+      renderProjects(
+        "productivity-grid",
+        projects.filter((p) => p.category === "productivity").slice(0, 1),
       );
     </script>
     <script src="assets/js/tech.js"></script>

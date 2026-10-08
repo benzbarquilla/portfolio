@@ -2,6 +2,7 @@ const projects = [
   // Development
   {
     image: "assets/images/projects/apex/desktop-1.webp",
+    mobile: "assets/images/projects/apex/mobile-1.png",
     title: "Apex Home Cleaning",
     category: "development",
     link: {
@@ -20,6 +21,7 @@ const projects = [
   },
   {
     image: "assets/images/projects/idp/1.webp",
+    mobile: "assets/images/projects/idp/mobile-1.png",
     title: "ISAAC Internal Developer Platform",
     category: "development",
     link: {
@@ -29,7 +31,6 @@ const projects = [
       "Internal Developer Platform designed to streamline development workflows by providing a centralized interface for managing internal tools and services.",
     techStack: [
       { name: "Next.js", icon: "nextjs/nextjs-original" },
-      { name: "JavaScript", icon: "javascript/javascript-original" },
       { name: "React", icon: "react/react-original" },
       { name: "CSS", icon: "css3/css3-original" },
     ],
@@ -79,11 +80,11 @@ const projects = [
   },
   {
     image: "assets/images/projects/applandingpage/1.webp",
+    mobile: "assets/images/projects/applandingpage/mobile.png",
     title: "Gymmigo App Landing Page",
     category: "development",
     link: { view: "https://benzbarquilla.github.io/gymmigo-landingpage/" },
-    description:
-      "Simple App version of Gym Equipment Borrowing & Management System",
+    description: "App version of Gym Equipment Borrowing & Management System",
     techStack: [
       { name: "HTML", icon: "html5/html5-original" },
       { name: "CSS", icon: "css3/css3-original" },
@@ -91,11 +92,43 @@ const projects = [
   },
   // Productivity
   {
-    image: "assets/images/projects/productivity/dashboard.webp",
-    title: "Interactive Business Dashboard",
+    image: "assets/images/projects/productivity/clean data.png",
+    before: "assets/images/projects/productivity/raw data.png",
+    title: "E-commerce Sales Data Cleaning & Reporting",
+    label: "Practice Project",
     category: "productivity",
     description:
-      "E-Commerce Business Dashboard data preprocessing and visualization",
+      "Clean and prepare an e-commerce sales dataset for accurate reporting and management use.",
+    techStack: [
+      {
+        name: "Microsoft Excel",
+        icon: "assets/icons/microsoft-excel.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/productivity/dashboard.webp",
+    before: "assets/images/projects/productivity/before.png",
+    title: "Interactive Business Dashboard",
+    label: "Academic Project",
+    category: "productivity",
+    description: "E-Commerce Business data cleaning and visualization",
+    techStack: [
+      {
+        name: "Microsoft Excel",
+        icon: "assets/icons/microsoft-excel.svg",
+        local: true,
+      },
+    ],
+  },
+  {
+    image: "assets/images/projects/productivity/email-after.png",
+    before: "assets/images/projects/productivity/email-before.png",
+    title: "Email Management/Zero Inbox",
+    label: "Practice Project",
+    category: "productivity",
+    description: "Turned my student email from messy to clean",
     techStack: [
       {
         name: "Microsoft Excel",
@@ -136,13 +169,14 @@ const projects = [
   // Media
   {
     image: "assets/images/projects/digital/8.webp",
-    title: "Minimim Viable Product (MVP)",
+    title: "Short-Form Edit: Product Teaser",
     category: "digital",
+    type: "video",
     link: {
       view: "https://drive.google.com/file/d/1FE84ozsIgz8qdoMRmRWLzaV8hIiJmsqs/view?usp=sharing",
     },
     description:
-      "A short simple video used by our capstone startup to explain an idea, or pitch a product before building it fully.",
+      "Minimum Viable Product (MVP) used by our capstone startup to explain an idea, or pitch a product before building it fully.",
     techStack: [
       {
         name: "Capcut",
@@ -153,8 +187,10 @@ const projects = [
   },
   {
     image: "assets/images/projects/digital/2.webp",
-    title: "Shorts/Reels",
+    title: "Short-Form Edit",
     category: "digital",
+    type: "video",
+    tall: true,
     link: {
       view: "https://drive.google.com/file/d/1MzzSAZ1xv0ATZdYUmuj7DEP_bF5B52Nf/view?usp=sharing",
     },
@@ -182,6 +218,22 @@ const projects = [
       },
     ],
   },
+
+  {
+    image: "assets/images/projects/digital/infographic-1.png",
+    title: "Infographic",
+    category: "digital",
+    tall: true,
+    link: { view: "https://canva.link/68iip51dtum7jm8" },
+    description: "Simple infographic",
+    techStack: [
+      {
+        name: "Canva",
+        icon: "assets/icons/canva.svg",
+        local: true,
+      },
+    ],
+  },
   {
     image: "assets/images/projects/digital/6.webp",
     title: "Cover Page",
@@ -197,21 +249,7 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/digital/5.webp",
-    title: "Infographic",
-    category: "digital",
-    link: { view: "https://canva.link/68iip51dtum7jm8" },
-    description: "Simple infographic",
-    techStack: [
-      {
-        name: "Canva",
-        icon: "assets/icons/canva.svg",
-        local: true,
-      },
-    ],
-  },
-  {
-    image: "assets/images/projects/digital/7.webp",
+    image: "assets/images/projects/digital/poster-1.png",
     title: "Poster",
     category: "digital",
     description: "Digital marketing social media posts",
@@ -224,23 +262,13 @@ const projects = [
       },
     ],
   },
+
   {
-    image: "assets/images/projects/digital/9.webp",
-    title: "Research Poster",
-    category: "digital",
-    description: "Rat Repellant Capstone Poster",
-    techStack: [
-      {
-        name: "Canva",
-        icon: "figma/figma-original",
-      },
-    ],
-  },
-  {
-    image: "assets/images/projects/digital/3.webp",
+    image: "assets/images/projects/digital/brochure.png",
     title: "Brochure",
     category: "digital",
     description: "Simple promotional brochure",
+    link: { view: "https://canva.link/6x8wlre64b61rvd" },
     techStack: [
       {
         name: "Canva",
@@ -251,10 +279,11 @@ const projects = [
   },
 
   {
-    image: "assets/images/projects/digital/4.webp",
+    image: "assets/images/projects/digital/pamphlet-1.png",
     title: "Pamphlet",
     category: "digital",
     description: "Simple educational pamphlet",
+    link: { view: "https://canva.link/q06ualbxzvk92lw" },
     techStack: [
       {
         name: "Canva",
