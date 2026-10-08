@@ -128,7 +128,8 @@ const projects = [
     title: "Email Management/Zero Inbox",
     label: "Practice Project",
     category: "productivity",
-    description: "Turned my student email from messy to clean",
+    description:
+      "The Challenge: An overflowing inbox buried in promotional noise, clutter, and unorganized threads. The Solution: Cleared the backlog by deleting promotional and unnecessary emails, then built a clean structural framework by creating custom labels to organize remaining messages.The Result: Transformed a chaotic inbox into a clean, categorized Workspace Zero, making future emails easy to find and manage instantly",
     techStack: [
       {
         name: "Microsoft Excel",
