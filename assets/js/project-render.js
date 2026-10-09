@@ -71,6 +71,7 @@ function renderDevelopmentCard(project) {
   `;
   return card;
 }
+
 // Renders Productivity Card
 function renderProductivityCard(project) {
   const card = document.createElement("article");
@@ -96,42 +97,23 @@ function renderProductivityCard(project) {
     )
     .join("");
 
-  const mediaHTML = project.before
-    ? `<div class="ba" style="--pos: 50%">
-         <img class="ba-img" src="${project.image}" alt="After: ${project.title}" loading="lazy" />
-         <img class="ba-img ba-before" src="${project.before}" alt="Before: ${project.title}" loading="lazy" />
-         <span class="ba-label ba-label-before">Before</span>
-         <span class="ba-label ba-label-after">After</span>
-         <div class="ba-handle" aria-hidden="true"></div>
-         <input type="range" min="0" max="100" value="50" class="ba-range"
-                aria-label="Compare before and after" />
-       </div>`
-    : `<img src="${project.image}" alt="Preview of ${project.title}" loading="lazy" />`;
-
   card.innerHTML = `
-  <div class="doc-preview">
-    ${mediaHTML}
-  </div>
-  <div class="project-info">
-    <div class="project-head">
-      <h3 class="project-title">${project.title}</h3>
-      ${labelHTML}
+    <div class="doc-preview">
+      <img src="${project.image}" alt="Preview of ${project.title}" loading="lazy" />
     </div>
-    <p class="project-desc">${project.description}</p>
-    <div class="project-footer">
-      <div class="project-tech">${techHTML}</div>
-      <div class="project-links">${linksHTML}</div>
+    <div class="project-info">
+      <div class="project-head">
+        <h3 class="project-title">${project.title}</h3>
+        ${labelHTML}
+      </div>
+      <p class="project-desc">${project.description}</p>
+      <div class="project-footer">
+        <div class="project-tech">${techHTML}</div>
+        <div class="project-links">${linksHTML}</div>
+      </div>
     </div>
-  </div>
-`;
+  `;
 
-  const range = card.querySelector(".ba-range");
-  const ba = card.querySelector(".ba");
-  if (range && ba) {
-    range.addEventListener("input", () => {
-      ba.style.setProperty("--pos", `${range.value}%`);
-    });
-  }
   return card;
 }
 

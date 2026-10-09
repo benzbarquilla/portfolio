@@ -90,6 +90,7 @@ const projects = [
       { name: "CSS", icon: "css3/css3-original" },
     ],
   },
+
   // Productivity
   {
     image: "assets/images/projects/productivity/clean data.png",
@@ -114,22 +115,6 @@ const projects = [
     label: "Academic Project",
     category: "productivity",
     description: "E-Commerce Business data cleaning and visualization",
-    techStack: [
-      {
-        name: "Microsoft Excel",
-        icon: "assets/icons/microsoft-excel.svg",
-        local: true,
-      },
-    ],
-  },
-  {
-    image: "assets/images/projects/productivity/email-after.png",
-    before: "assets/images/projects/productivity/email-before.png",
-    title: "Email Management/Zero Inbox",
-    label: "Practice Project",
-    category: "productivity",
-    description:
-      "The Challenge: An overflowing inbox buried in promotional noise, clutter, and unorganized threads. The Solution: Cleared the backlog by deleting promotional and unnecessary emails, then built a clean structural framework by creating custom labels to organize remaining messages.The Result: Transformed a chaotic inbox into a clean, categorized Workspace Zero, making future emails easy to find and manage instantly",
     techStack: [
       {
         name: "Microsoft Excel",
@@ -167,6 +152,7 @@ const projects = [
       },
     ],
   },
+
   // Media
   {
     image: "assets/images/projects/digital/8.webp",
