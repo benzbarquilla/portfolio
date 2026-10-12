@@ -93,22 +93,6 @@ const projects = [
 
   // Productivity
   {
-    image: "assets/images/projects/productivity/clean data.png",
-    before: "assets/images/projects/productivity/raw data.png",
-    title: "E-commerce Sales Data Cleaning & Reporting",
-    label: "Practice Project",
-    category: "productivity",
-    description:
-      "Clean and prepare an e-commerce sales dataset for accurate reporting and management use.",
-    techStack: [
-      {
-        name: "Microsoft Excel",
-        icon: "assets/icons/microsoft-excel.svg",
-        local: true,
-      },
-    ],
-  },
-  {
     image: "assets/images/projects/productivity/dashboard.webp",
     before: "assets/images/projects/productivity/before.png",
     title: "Interactive Business Dashboard",
