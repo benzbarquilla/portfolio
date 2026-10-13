@@ -161,7 +161,7 @@ const projects = [
     title: "Short-Form Edit",
     category: "digital",
     type: "video",
-    tall: true,
+    // tall: true,
     link: {
       view: "https://drive.google.com/file/d/1MzzSAZ1xv0ATZdYUmuj7DEP_bF5B52Nf/view?usp=sharing",
     },
@@ -194,7 +194,7 @@ const projects = [
     image: "assets/images/projects/digital/infographic-1.png",
     title: "Infographic",
     category: "digital",
-    tall: true,
+    // tall: true,
     link: { view: "https://canva.link/68iip51dtum7jm8" },
     description: "Simple infographic",
     techStack: [

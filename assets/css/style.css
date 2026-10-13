@@ -555,9 +555,9 @@ body {
 }
 
 /* vertical videos and portrait posts */
-.gallery-tile.tall {
-  grid-row: span 2;
-}
+/* .gallery-tile.tall {
+  grid-row: span 1;
+} */
 
 .gallery-img {
   display: block;
