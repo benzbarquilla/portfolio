@@ -29,6 +29,12 @@ const certs = [
     program: "Wadhwani Foundation",
     link: "https://web.certificate.wfglobal.org/en/certificate?certificateId=69a291440a3fed6611f86469",
   },
+  {
+    image: "assets/images/badges/ojt-certificate.jpg",
+    title: "Certificate Of Completion",
+    program: "On-the-Job Training",
+    link: "assets/images/badges/ojt-certificate.jpg",
+  },
 ];
 
 const certGrid = document.getElementById("cert-grid");
