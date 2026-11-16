@@ -1,6 +1,25 @@
 const projects = [
   // Development
   {
+    image: "assets/images/projects/pounce/pounce-desktop.webp",
+    mobile: "assets/images/projects/pounce/pounce-mobile.webp",
+    title: "Pounce - Personal Project",
+    category: "development",
+    link: {
+      code: "https://github.com/benzbarquilla/pounce",
+      view: "Coming soon",
+    },
+    description:
+      "Built a job application tracker to replace the Google Sheets I've been using.",
+    techStack: [
+      { name: "MongoDB", icon: "mongodb/mongodb-original" },
+      { name: "Express", icon: "express/express-original" },
+      { name: "React", icon: "react/react-original" },
+      { name: "Nodejs", icon: "nodejs/nodejs-original" },
+      { name: "Tailwindcss", icon: "tailwindcss/tailwindcss-original" },
+    ],
+  },
+  {
     image: "assets/images/projects/apex/desktop-1.webp",
     mobile: "assets/images/projects/apex/mobile-1.png",
     title: "Apex Home Cleaning - Personal Project",
@@ -20,8 +39,8 @@ const projects = [
     ],
   },
   {
-    image: "assets/images/projects/idp/1.webp",
-    mobile: "assets/images/projects/idp/mobile-1.png",
+    image: "assets/images/projects/idp/desktop.webp",
+    mobile: "assets/images/projects/idp/mobile.webp",
     title: "ISAAC Internal Developer Platform",
     category: "development",
     link: {
@@ -79,8 +98,8 @@ const projects = [
     techStack: [{ name: "Laravel", icon: "laravel/laravel-original" }],
   },
   {
-    image: "assets/images/projects/applandingpage/1.webp",
-    mobile: "assets/images/projects/applandingpage/mobile.png",
+    image: "assets/images/projects/applandingpage/desktop.webp",
+    mobile: "assets/images/projects/applandingpage/mobile.webp",
     title: "Gymmigo App Landing Page",
     category: "development",
     link: { view: "https://benzbarquilla.github.io/gymmigo-landingpage/" },
