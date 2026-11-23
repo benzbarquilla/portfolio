@@ -110,7 +110,6 @@ body {
     border-color: transparent;
   }
 }
-
 /* ========== ABOUT ========== */
 .about-section {
   display: flex;
@@ -1062,6 +1061,7 @@ span {
   /* ========== MAIN CONTAINER ========== */
   .main-container {
     margin-top: 3rem;
+    padding: 0px 30px 0px 30px;
   }
 
   /* ========== NAME ========== */
@@ -1082,9 +1082,6 @@ span {
   }
 
   /* ========== ABOUT ========== */
-  .about-section {
-    padding: 0px 10px;
-  }
   .about-section > p {
     text-align: justify;
     hyphens: auto;
@@ -1092,17 +1089,11 @@ span {
   }
 
   /* ========== SERVICES ========== */
-  .services-section {
-    padding: 0 10px;
-  }
   .services-section > p {
     font-size: 20px;
   }
 
   /* ========== PROJECTS ========== */
-  .projects-section {
-    padding: 0px 10px;
-  }
   .projects-section > p {
     font-size: 20px;
   }
@@ -1130,9 +1121,6 @@ span {
   }
 
   /* ========== EXPERIENCE ========== */
-  .experience-section {
-    padding: 0px 10px;
-  }
   .experience-section > p {
     font-size: 20px;
   }
@@ -1141,17 +1129,11 @@ span {
   }
 
   /* ========== TECHNOLOGIES ========== */
-  .skills-section {
-    padding: 0px 10px;
-  }
   .skills-section > p {
     font-size: 20px;
   }
 
   /* ========== EDUCATION ========== */
-  .education-section {
-    padding: 0px 10px;
-  }
   .education-section > p {
     font-size: 20px;
   }
@@ -1160,9 +1142,6 @@ span {
   }
 
   /* ========== ABOUT ME ========== */
-  .outside-section {
-    padding: 0px 10px;
-  }
   .outside-section > p {
     font-size: 20px;
   }
@@ -1183,24 +1162,18 @@ span {
   }
 
   /* ========== CERTIFICATIONS ========== */
-  .certificates-section {
-    padding: 0px 10px;
-  }
   .certificates-section > p {
     font-size: 20px;
   }
   .cert-badge {
-    width: 180px;
+    width: 150px;
   }
   .cert-grid {
     gap: 0.5rem;
-    justify-content: start;
+    justify-content: center;
   }
 
   /* ========== CONTACTS ========== */
-  .contact-section {
-    padding: 0px 10px;
-  }
   .contact-section > p {
     font-size: 20px;
     margin-bottom: 0.5rem;
@@ -1235,7 +1208,7 @@ span {
   }
   .resume-button {
     align-self: center;
-    width: 150px;
+    width: 120px;
     font-size: var(--font-size-body);
   }
 

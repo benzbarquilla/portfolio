@@ -10,7 +10,7 @@ const projects = [
       view: "Coming soon",
     },
     description:
-      "Built a job application tracker to replace the Google Sheets I've been using.",
+      "Pounce is a full-stack job application tracker I built to replace the Google Sheet I used for my own job hunt. It tracks each application and shows a dashboard with stats and upcoming interviews, led by an orange cat mascot",
     techStack: [
       { name: "MongoDB", icon: "mongodb/mongodb-original" },
       { name: "Express", icon: "express/express-original" },
@@ -28,7 +28,7 @@ const projects = [
       demo: "https://drive.google.com/drive/folders/1veUNi_15-Dk4YzHJiBd1vdJbfRHMwtzt?usp=sharing",
     },
     description:
-      "Built and customized functional WordPress website locally via XAMPP and Elementor, practiced layout design and visual styling,",
+      "Developed a practice website using WordPress and Elementor locally with XAMPP, exploring page layouts, visual styling, and website customization.",
     techStack: [
       { name: "WordPress", icon: "assets/icons/wordpress.svg", local: "true" },
       {
@@ -47,7 +47,7 @@ const projects = [
       demo: "https://drive.google.com/drive/folders/1veUNi_15-Dk4YzHJiBd1vdJbfRHMwtzt?usp=sharing",
     },
     description:
-      "Internal Developer Platform designed to streamline development workflows by providing a centralized interface for managing internal tools and services.",
+      "Developed the frontend UI of an Internal Developer Platform, focusing on responsive layouts, usability, and consistent experiences across desktop and mobile screens.",
     techStack: [
       { name: "Next.js", icon: "nextjs/nextjs-original" },
       { name: "React", icon: "react/react-original" },
@@ -63,7 +63,7 @@ const projects = [
       demo: "https://drive.google.com/file/d/1Ktp26auyY5KzcxQIN5qC6KFxJGudS456/view?usp=sharing",
     },
     description:
-      "IoT-based environmental monitoring system that detects chainsaw sounds using machine learning and transmits alerts through LoRa to a web dashboard.",
+      "Developed an IoT-based environmental monitoring system that detects chainsaw sounds using machine learning that transmits alerts through LoRa to a web dashboard.",
     techStack: [
       { name: "MongoDB", icon: "mongodb/mongodb-original" },
       { name: "Express", icon: "express/express-original" },
@@ -79,7 +79,7 @@ const projects = [
     category: "development",
     link: { code: "https://github.com/benzbarquilla/gebms-react" },
     description:
-      " Web application for managing equipment inventory, streamlining borrowing and returns. ",
+      "Developed a Web application for our university PE Department for managing equipment inventory, streamlining borrowing and returns. ",
     techStack: [
       { name: "MongoDB", icon: "mongodb/mongodb-original" },
       { name: "Express", icon: "express/express-original" },

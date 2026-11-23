@@ -145,6 +145,7 @@ function createStack(container, images, options = {}) {
 
 // usage
 const images = [
+  "assets/images/profile/9.webp",
   "assets/images/profile/1.webp",
   "assets/images/profile/2.webp",
   "assets/images/profile/3.webp",
