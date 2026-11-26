@@ -1161,7 +1161,7 @@ span {
     flex-direction: column;
     gap: 0.25rem;
     margin-bottom: 0.75rem;
-    padding: 1rem;
+    padding: 10px;
   }
 
   .experience-section td {
