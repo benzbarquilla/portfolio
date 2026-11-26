@@ -724,6 +724,21 @@ table {
   text-align: end;
   font-weight: 400;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.role-desc {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
 
 /* ========== TECHNOLOGIES ========== */
 .skills-section {
@@ -1124,8 +1139,48 @@ span {
   .experience-section > p {
     font-size: 20px;
   }
+
+  .experience-section table,
+  .experience-section tbody {
+    display: block;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease;
+  }
+  .experience-section table:hover {
+    transform: translateY(-10px);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .experience-section tr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+  }
+
+  .experience-section td {
+    display: block;
+    padding: 0;
+  }
+
+  /* reading order: role, company, date */
+  .role {
+    order: 1;
+  }
   .company {
+    order: 2;
     text-align: left;
+  }
+  .date {
+    order: 3;
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
   }
 
   /* ========== TECHNOLOGIES ========== */
